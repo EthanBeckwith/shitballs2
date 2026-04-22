@@ -1,0 +1,105 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.container{
+    border: 10px, solid, black;
+    width: 600px;
+    height: 600px;
+    border-radius: 50px;
+      position: relative; /* This keeps absolute items inside this box */
+   
+}
+#theBox{
+    background-color: blueviolet;
+    width: 80px;
+    height: 80px;
+    transition: 1s ease;
+    position: absolute; 
+    border-radius: 50px;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+#mona{
+    height: 200px;
+    width: 140px;
+     position: absolute;
+    margin-left: -160px;
+     display: none; 
+}
+#scream{
+    margin-top: 210px;
+    height: 200px;
+    width: 140px;
+     position: absolute;
+    margin-left: -160px;
+     display: none; 
+}
+#art3{
+    margin-top: 420px;
+    height: 200px;
+    width: 140px;
+     position: absolute;
+    margin-left: -160px;
+     display: none; 
+}
+#art4{
+    margin-top: 630px;
+    height: 200px;
+    width: 140px;
+     position: absolute;
+    margin-left: -160px;
+     display: none; 
+}
+#TheShop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#Art2Button{
+    display: none;
+}
+#Art3Button{
+    display: none;
+}
+#Art4Button{
+    display: none;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 400px;
+        height: 400px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    #theBox {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 200px;
+        height: 200px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    #mona{
+        height: 100px;
+        margin-left: -85px;
+        } 
+   #theBox {
+        width: 50px;
+        height: 50px;
+    }
+}
